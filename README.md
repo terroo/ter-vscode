@@ -1,4 +1,6 @@
 # Terlang Syntax Highlighting Extension
+## Alternative Saymon Macedo: <https://marketplace.visualstudio.com/items?itemName=SaymonMacedo.terlang>
+> This extension: <https://marketplace.visualstudio.com/items?itemName=marcoscode.ter>
 
 ## Overview
 
