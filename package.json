@@ -1,0 +1,30 @@
+{
+  "name": "ter",
+  "publisher": "marcoscode",
+  "displayName": "ter",
+  "description": "Syntax highlighting for Terlang in VS Code.",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/terroo/ter-vscode.git"
+  },
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "terlang",
+      "aliases": ["Terlang", "terlang"],
+      "extensions": [".ter"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "terlang",
+      "scopeName": "main.ter",
+      "path": "./syntaxes/terlang.tmLanguage.json"
+    }]
+  }
+}

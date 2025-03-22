@@ -1,0 +1,54 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Terlang",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.terlang",
+				"match": "\\b(if|else|while|for|return|auto|include|set|class|out|output|exec|rand|clock|getenv|args)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.terlang",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.terlang",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"comments": {
+		"patterns": [
+			{
+				"name": "comment.line.double-slash.terlang",
+				"match": "//.*"
+			},
+			{
+				"name": "comment.block.terlang",
+				"begin": "/\\*",
+				"end": "\\*/",
+				"patterns": [
+					{
+						"name": "comment.block.documentation.terlang",
+						"match": "."
+					}
+				]
+			}
+		]
+	},
+	"scopeName": "main.ter"
+}
